@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para ti</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <div class="bg-decor" id="bgDecor"></div>
+
+  <div class="stage" id="letterStage">
+    <div class="letter-card">
+      <div class="letter-text" id="letterText"></div>
+      <div class="dots" id="dots"></div>
+      <button class="btn" id="nextBtn">Seguir leyendo</button>
+    </div>
+  </div>
+
+  <div class="stage hidden" id="proposalStage">
+    <div class="heart-wrap">
+      <svg viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 28.5C16 28.5 1 19.6 1 9.4C1 4.6 4.6 1 9.2 1C12 1 14.5 2.4 16 4.6C17.5 2.4 20 1 22.8 1C27.4 1 31 4.6 31 9.4C31 19.6 16 28.5 16 28.5Z" fill="#F5B942"/>
+      </svg>
+    </div>
+    <h1 class="question">¿Quieres ser mi novia?</h1>
+    <button class="btn btn-accent" id="yesBtn">Sí, quiero</button>
+  </div>
+
+  <div class="stage hidden" id="thanksStage">
+    <h1 class="thanks-title">Gracias</h1>
+    <p class="thanks-text">por confiar en mí y por amarme.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
